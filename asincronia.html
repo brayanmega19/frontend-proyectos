@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Asincronia en javascript</h1>
+    <script>
+        // function cuadradoPromise(value){
+        //     if(typeof value !== "number") return Promise.reject("El valor no es numerico"); 
+        //     return new Promise((resolve,reject)=>{
+        //         setTimeout(()=>{
+        //             resolve({
+        //                 value,
+        //                 result: value*value
+        //             });
+        //         },0|Math.random()*1000);
+        //     });
+        // }
+        // cuadradoPromise(0)
+        // .then(obj=>{
+        //     console.log("Inicio");
+        //     console.log(`Valor: ${obj.value} cuadrado: ${obj.result}`);
+        //     return cuadradoPromise(1);
+        // })
+        // .then(obj=>{
+        //     console.log(`Valor: ${obj.value} cuadrado: ${obj.result}`);
+        //     return cuadradoPromise(2);
+        // })
+        // .then(obj=>{
+        //     console.log(`Valor: ${obj.value} cuadrado: ${obj.result}`);
+        //     return cuadradoPromise(3);
+        // })
+        // .catch(err => console.error(err));
+
+    //    function cuadradoPromise(value){
+    //     if(typeof value !== "number") return Promise.reject("No es valido");
+    //     return new Promise((resolve, reject)=>{
+    //         setTimeout(()=>{
+    //             resolve({
+    //                 value,
+    //                 result: value*value
+    //             });
+    //         },0|Math.random()*1000);
+    //     });
+    //    }
+    //    cuadradoPromise(0)
+    //    .then(obj=>{
+    //     console.log(`value: ${obj.value} result: ${obj.result}`);
+    //     return cuadradoPromise(2)
+    //    })
+    //    .then(obj=>{
+    //     console.log(`value: ${obj.value} result: ${obj.result}`);
+    //    })
+    //    .catch(err=>console.log(err));
+
+    // let nombre = Symbol();
+    // let apellido = Symbol();
+    // let saludar = Symbol();
+
+    // console.log(nombre,apellido);
+
+    // const persona = {
+    //     [nombre]: "Brayan",
+    //     [apellido]: "Ortega",
+    //     [saludar] : function(){
+    //          console.log("Hola");
+    //     },
+    //     hola(){
+    //         console.log("hola");
+    //     }
+    // };
+    
+    // console.log(persona);
+    // console.log(persona[nombre]);
+    // persona.hola();
+
+    // for(let i in persona){
+    //     console.log(i);
+    // }
+    // console.log(Object.getOwnPropertySymbols(persona));
+
+    
+    
+
+    // function* iterable(){
+    //     yield "test one";
+    //     yield "test two";
+    //     yield "test three";
+    //     yield "test four";
+    // }
+
+    // let iterador = iterable();
+    // let next = iterador.next();
+    // while(!next.done){
+    //     console.log(next.value);
+    //     next = iterador.next();
+    // }
+        
+    // console.log(iterador.next().done);
+
+    // for(let i=0; i<20; i++){
+    //     console.log(iterador.next());
+    // }
+    // for(let i of iterador){
+    //     console.log(i);
+    // }
+
+// const persona = {
+//     nombre :"",
+//     apellido : "",
+//     edad : 0
+// };
+
+// const manejador = {
+//     set(obj,prop,val){
+//         if(prop === "edad" && val<0){
+//             return console.error("No es posible tener una edad negativa");
+//         }
+//         obj[prop] = val;
+//     }
+// }
+// console.log(persona);
+// const test = new Proxy(persona, manejador);
+// test.nombre = "Brayan";
+// test.apellido = "Ortega";
+// test.edad = 15;
+
+// console.log(test);
+
+// const usuarioObj = {};
+
+// const usuario = ["Brayan","Renata","Raquel","Victoria","Emmanuel"];
+
+// usuario.forEach((user,index) => usuarioObj[`id_${index}`] = user);
+
+// console.log(usuarioObj);
+
+
+
+
+
+
+
+   
+
+    
+
+    
+    </script>
+</body>
+</html>

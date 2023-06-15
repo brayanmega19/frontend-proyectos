@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fundamentos hola</h1>
+    <script>
+        // console.log('Reto de creacion de arreglo dinamico sin utilizar metodos auxiliares');
+        // console.log(`Introduce "si" si deseas crear un arreglo`);
+        // let metele = prompt("Hora");
+        // var respaldo = new Array(100);
+        // let entrar = (metele == "si")?
+        // true:false;
+        // if(entrar === true){
+        //     console.log("Se ha creado un arreglo"); 
+        //     var arreglo = [];
+        //     let continuar = "si";
+        //     while (continuar == "si"){
+        //         let elemento = prompt("Introduzca un nuevo elemento en el arreglo");
+        //         agregar(elemento);
+        //         continuar = prompt("Desea seguir agregando elementos?");
+
+        //     }
+        
+        // }
+        // function agregar(elemento){
+        //     arreglo.forEach((i)=>{
+        //         respaldo[i]=i;
+        //     });
+        // };
+
+    //     let respaldo = [];    
+    //    let arreglo = [2,4,5,6];
+    //    let guardar = 0;
+    //    arreglo.forEach((i,index)=>{
+    //     respaldo[index] = i;
+    //     guardar = index+1;
+    //    });
+    //    respaldo
+    //    console.log(respaldo);
+    //    console.log(arreglo);
+    //    console.log(guardar);
+    
+    let variable = 0;
+   function sumar(...c){
+    c.forEach((i)=>{
+        variable += i;
+    });
+    
+   }
+   let res = sumar(2,3);
+   
+   console.log(variable);
+
+
+
+
+    </script>
+</body>
+</html>
