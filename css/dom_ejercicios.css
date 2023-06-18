@@ -46,7 +46,7 @@ img{
     margin-right: auto;
     width: 100%;
     max-width: var(--container-width);
-    min-height: 100vh;
+    min-height: 120vh;
     text-align: center;
 }
 
@@ -320,5 +320,10 @@ img{
     .scroll-top-btn{
         right: initial;
         left: calc(4.25rem + 1vw);
+    }
+    .active{
+        background-color: var(--main-color);
+        color: var(--second-color) !important;
+        
     }
 }

@@ -10,6 +10,7 @@ import hamburgerMenu from "./menu_hamburguesa.js";
 import respMedia from "./objeto_responsive.js";
 import responsiveTester from "./prueba_responsive.js";
 import { digitalClock, alarm } from "./reloj.js";
+import scrollSpy from "./scroll_espia.js";
 import draw from "./sorteo.js";
 import { moveBall, shortcuts } from "./teclado.js";
 import darkTheme from "./tema_oscuro.js";
@@ -40,6 +41,7 @@ d.addEventListener("DOMContentLoaded",(e)=>{
     searchFilters(".card-filter", ".card");
     draw("#winner-btn",".player")
     slide();
+    scrollSpy();
 });
 
 d.addEventListener("keydown", e=>{
