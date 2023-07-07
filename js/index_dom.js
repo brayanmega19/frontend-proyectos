@@ -20,9 +20,9 @@ const d = document;
 d.addEventListener("DOMContentLoaded",(e)=>{
     hamburgerMenu(".panel-btn",".panel",".menu a");
     digitalClock("#reloj","#activar-reloj","#desactivar-reloj");
-    // alarm();
+    alarm();
     countdown("countdown",
-    "MAY 26, 2023 02:27:19",
+    "JUL 26, 2023 02:27:19",
     "Feliz cumpleaños docente digital",
     "#activar-cuenta");
     scrollTopButton(".scroll-top-btn");

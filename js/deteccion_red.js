@@ -4,7 +4,9 @@ n = navigator;
 export default function networkStatus() {
 
     const linea = () =>{
-        const $div = d.createElement("div");
+        const $div = d.createElement("div"),
+        $header= d.querySelector("header");
+
         
         if(n.onLine){
             
@@ -12,13 +14,17 @@ export default function networkStatus() {
             $div.classList.add("online");
             $div.classList.remove("offline");
         }else{
+            
             $div.textContent = "Conexion perdida";
             $div.classList.add("offline");
             $div.classList.remove("online");
         }
-        d.body.insertAdjacentElement("afterbegin",$div);
+
+        $header.insertAdjacentElement("afterbegin",$div);
+
         setTimeout(()=>{
-            d.body.removeChild($div);
+            $header.removeChild($div);
+
         },2000);
     };
     

@@ -3,7 +3,7 @@ n = navigator;
 export default function getGeolocalizacion(id){
     const $id = d.getElementById(id);
 
-    console.log("conexion");
+    // console.log("conexion");
 
     const options = {
         enableHighAccuracy: true,
@@ -13,7 +13,7 @@ export default function getGeolocalizacion(id){
 
     const success = position =>{
         let coords = position.coords;
-        console.log("Hola", position);
+        // console.log("Hola", position);
         $id.innerHTML = `
         <p>Tu posicion actual es: </p>
         <ul>
@@ -21,11 +21,12 @@ export default function getGeolocalizacion(id){
             <li> Longitud: <b>${coords.longitude}</b></li>
             <li> Precision: <b>${coords.latitude}</b></li>
             <a href="https://www.google.com.mx/maps/@${coords.latitude},${coords.longitude},30z" target="_blank" rel="noopener">Ver en google maps</a>
+        </ul>
         `
     },
     error = err =>{
         $id.innerHTML = `<p><mark> Error ${err.code}: ${err.message}</mark></p>`;
-        console.log(`Error ${err.code} : ${err.message}`);
+        // console.log(`Error ${err.code} : ${err.message}`);
     }
 
     

@@ -176,15 +176,19 @@ img{
 
 .online,
 .offline{
-    position: sticky;
+    position: absolute;
     top:0;
-    z-index:1000;
+    left: 0;
+    z-index:1001 !important;
     padding: 1rem;
     font-size: 1.5;
     font-weight:bold;
     text-align:center;
     background-color:#1b5e20;
     color:#fff;
+    height: 30%;
+    display: block;
+    width: 100%;
 }
 
 .offline{

@@ -2,13 +2,13 @@ const d = document;
 
 export default function scrollSpy(){
     const $sections = d.querySelectorAll("section[data-scroll-spy]");
-    console.log("Console: ",$sections);
+    // console.log("Console: ",$sections);
     const cb = (entries) =>{
         // console.log("entries",entries);
         entries.forEach((entry)=>{
 
             const id = entry.target.getAttribute("id");
-            console.log(id);
+            // console.log(id);
             if(entry.isIntersecting){
                 d.querySelector(`a[data-scroll-spy][href="#${id}"]`).
                 classList.add("active");
