@@ -59,6 +59,7 @@
 
 })();
 
+//FETCH
 (()=>{ 
     $fetchAsync = document.getElementById("fetch-async"),
     $fragment = document.createDocumentFragment();
